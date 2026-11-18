@@ -32,7 +32,7 @@ git config --global user.email "you@example.com"
 
 ## Part 1: Fork and clone
  
-1. On this GitHub page, click **Fork** (top right) then **Create fork**. You now have your own copy under your account.
+1. On this GitHub page, click **Fork** (top right) then **Create fork**. **IMPORTANT: CHOOSE THE OWNER AS KU-COMPUTING WORKSHOP.**
 2. On **your fork's page**, click the green **Code** button and copy the HTTPS link.
 3. In Visual Studio terminal:
 ```
