@@ -45,3 +45,8 @@ def payout(base, bonus):
 def is_wasted(health):
     """Return True when health has run out (0 or less), otherwise False."""
     return health < 0
+
+# MISSION 5 (medium): Heat cap
+def add_heat(stars, heat):
+    """Add heat to the wanted level, but never go above MAX_STARS."""
+    return stars + heat
