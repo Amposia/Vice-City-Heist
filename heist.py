@@ -17,3 +17,11 @@ CARS = [
     ("Stallion", 140),
 ]
 MAX_STARS = 5
+
+
+# MISSION 1 (easy): Welcome to Vice City
+def welcome(name):
+    """Return the text: Welcome to Vice City, Lucia!  (use the name that is passed in)"""
+    # TODO: this function is unfinished.
+    # Hint: an f-string looks like f"Hello {name}"
+    pass
