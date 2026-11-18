@@ -33,3 +33,9 @@ def show_stars(stars):
     # TODO: this function is unfinished.
     # Hint: in Python, "*" * 3 gives "***"
     return ""
+
+
+# MISSION 3 (easy): The payout
+def payout(base, bonus):
+    """Total cash = the base pay PLUS the bonus."""
+    return base - bonus
