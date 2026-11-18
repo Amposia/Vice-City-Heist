@@ -39,3 +39,9 @@ def show_stars(stars):
 def payout(base, bonus):
     """Total cash = the base pay PLUS the bonus."""
     return base - bonus
+
+
+# MISSION 4 (easy): WASTED?
+def is_wasted(health):
+    """Return True when health has run out (0 or less), otherwise False."""
+    return health < 0
