@@ -46,7 +46,14 @@ def is_wasted(health):
     """Return True when health has run out (0 or less), otherwise False."""
     return health < 0
 
+
 # MISSION 5 (medium): Heat cap
 def add_heat(stars, heat):
     """Add heat to the wanted level, but never go above MAX_STARS."""
     return stars + heat
+
+
+# MISSION 6 (medium): The getaway car
+def fastest_car(cars):
+    """Return the NAME of the car with the highest top speed."""
+    return min(cars, key=lambda car: car[1])[0]
