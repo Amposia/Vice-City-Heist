@@ -65,3 +65,36 @@ def split_the_take(total, crew_size):
     in whole dollars. 9000 split 3 ways -> 3000"""
     # Hint: // divides and rounds down
     return total * crew_size
+
+
+# ---------------------------------------------------------------------------
+# Don't edit below this line. This just checks your missions.
+# ---------------------------------------------------------------------------
+CHECKS = [
+    ("Mission 1: welcome", lambda: welcome("Lucia") == "Welcome to Vice City, Lucia!"),
+    ("Mission 2: show_stars", lambda: show_stars(3) == "***" and show_stars(0) == ""),
+    ("Mission 3: payout", lambda: payout(5000, 1500) == 6500),
+    ("Mission 4: is_wasted", lambda: bool(is_wasted(0)) and not is_wasted(40)),
+    ("Mission 5: add_heat", lambda: add_heat(3, 1) == 4 and add_heat(4, 3) == MAX_STARS),
+    ("Mission 6: fastest_car", lambda: fastest_car(CARS) == "Infernus"),
+    ("Mission 7: split_the_take", lambda: split_the_take(9000, 3) == 3000),
+]
+
+
+def run_checks():
+    print(f"\nCrew: {CREW_NAME}   |   Hideout: {HIDEOUT}\n")
+    passed = 0
+    for name, check in CHECKS:
+        try:
+            ok = bool(check())
+        except Exception:
+            ok = False
+        print(("PASS  " if ok else "FAIL  ") + name)
+        passed += ok
+    print(f"\n{passed}/{len(CHECKS)} missions complete.")
+    if passed == len(CHECKS):
+        print("MISSION PASSED. Respect +")
+
+
+if __name__ == "__main__":
+    run_checks()
