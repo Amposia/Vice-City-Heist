@@ -57,3 +57,11 @@ def add_heat(stars, heat):
 def fastest_car(cars):
     """Return the NAME of the car with the highest top speed."""
     return min(cars, key=lambda car: car[1])[0]
+
+
+# MISSION 7 (medium): Splitting the Jewel Store Job
+def split_the_take(total, crew_size):
+    """Michael, Franklin and Trevor split the take. Return each person's share
+    in whole dollars. 9000 split 3 ways -> 3000"""
+    # Hint: // divides and rounds down
+    return total * crew_size
