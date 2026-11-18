@@ -25,3 +25,11 @@ def welcome(name):
     # TODO: this function is unfinished.
     # Hint: an f-string looks like f"Hello {name}"
     pass
+
+
+# MISSION 2 (easy): Wanted level stars
+def show_stars(stars):
+    """Return one '*' for every wanted star. 3 stars -> '***'"""
+    # TODO: this function is unfinished.
+    # Hint: in Python, "*" * 3 gives "***"
+    return ""
